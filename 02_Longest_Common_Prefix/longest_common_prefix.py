@@ -9,7 +9,7 @@ def longestCommonPrefix(strs):
 
     for i in range(len(base)):
         for word in strs[1:]:
-            if len(word) == 0 or word[i] != base[i]:
+            if len(word) == i or word[i] != base[i]:
                 return result
         
         result += base[i]
