@@ -1,17 +1,18 @@
 def search_insert_postion(nums, target):
     left = 0
     right = len(nums) - 1
+    lb = lens(nums)
 
     while left <= right:
         mid = (left+right)//2
 
         if nums[mid] >= target:
-            left = mid
+            lb = mid
             right = mid-1
         else:
             left = mid + 1
     
-    return left
+    return lb
 
 
 n = int(input("How many numbers do you want to enter? "))
