@@ -1,7 +1,7 @@
 def search_insert_postion(nums, target):
     left = 0
     right = len(nums) - 1
-    lb = lens(nums)
+    lb = len(nums)
 
     while left <= right:
         mid = (left+right)//2
